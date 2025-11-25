@@ -1,0 +1,68 @@
+body {
+    background: linear-gradient(140deg, #261076 0%, #1b0b5a 35%, #0d0638 100%);
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    color: #f1f1f1;
+}
+
+
+/* 🕊️ Navbar Minimalis Elegan */
+.custom-nav {
+    background: #261076;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+/* Hover efek */
+.navbar-nav .nav-link {
+  font-size: 16px;
+  color: #f2f2f2 !important;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+
+.icon-white {
+    filter: brightness(0) invert(1);
+}
+
+
+/* CARD */
+/* Animasi halus */
+.card {
+    transition: all 0.3s ease;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+/* Saat hover: card naik & sedikit membesar */
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Gambar */
+.card-img-custom {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Gambar zoom saat hover */
+.card:hover .card-img-custom {
+    transform: scale(1.04);
+}
+
+/* Tombol berubah warna saat hover */
+.btn-danger {
+    transition: 0.2s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
