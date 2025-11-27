@@ -70,7 +70,7 @@ $data = $song->getAllSongs();
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $d['title']; ?></h5>
                             <p class="card-text text-muted mb-1">Artist: <?php echo $d['artist']; ?></p>
-                            <p class="card-text mb-1">Mood: <strong><?php echo ucfirst($d['mood']); ?></strong></p>
+                            <p class="card-text mb-1">Mood: <strong><?php echo ucfirst($d['category_name']); ?></strong></p>
                             <p class="card-text">Duration: <?php echo $d['duration']; ?></p>
                             <a href="play.php?id=<?php echo $d['id']; ?>" class="btn btn-danger w-100 mt-3">
                                 ▶ Play Video

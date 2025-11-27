@@ -46,7 +46,7 @@ $youtubeID = getYoutubeID($data['youtube_url']);
             </iframe>
             <div class="text-white">
                 <br><h4>Artist: <?php echo $data['artist']; ?></h4>
-                <p>Mood: <strong><?php echo ucfirst($data['mood']); ?></strong></p>
+                <p>Mood: <strong><?php echo ucfirst($data['category_name']); ?></strong></p>
                 <p>Duration: <?php echo $data['duration']; ?></p>
                 <a href="index.php" class="btn btn-secondary mt-4">⬅ Kembali</a>
             </div>
@@ -58,3 +58,4 @@ $youtubeID = getYoutubeID($data['youtube_url']);
 </body>
 
 </html>
+
