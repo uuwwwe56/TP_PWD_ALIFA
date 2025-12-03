@@ -1,5 +1,5 @@
 <?php
-require_once "Song.php";
+require_once "song.php";
 $song = new Song();
 $data = $song->getAllSongs();
 ?>
@@ -35,22 +35,18 @@ $data = $song->getAllSongs();
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Genres</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Top Charts</a>
+                        <a class="nav-link" href="kategori.php">Genres</a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
                     </li>
 
-                    <li class="nav-item ms-3">
+                    <!-- <li class="nav-item ms-3">
                         <a class="btn btn-light rounded-pill px-3 fw-semibold shadow-sm" href="#">
                             Login
                         </a>
-                    </li>
+                    </li> -->
 
                 </ul>
             </div>
@@ -60,6 +56,8 @@ $data = $song->getAllSongs();
 
     <div class="container py-5">
         <h1 class="text-center mb-5 title-header text-white">🎧 Free Smart Playlist</h1>
+        <div class="text-end mb-4">
+        </div>
 
         <div class="row g-4">
 
@@ -72,7 +70,7 @@ $data = $song->getAllSongs();
                             <p class="card-text text-muted mb-1">Artist: <?php echo $d['artist']; ?></p>
                             <p class="card-text mb-1">Mood: <strong><?php echo ucfirst($d['category_name']); ?></strong></p>
                             <p class="card-text">Duration: <?php echo $d['duration']; ?></p>
-                            <a href="play.php?id=<?php echo $d['id']; ?>" class="btn btn-danger w-100 mt-3">
+                            <a href="play.php?id=<?php echo $d['id']; ?>" class="btn btn-danger w-100 mt-2">
                                 ▶ Play Video
                             </a>
 
@@ -83,7 +81,6 @@ $data = $song->getAllSongs();
 
         </div>
     </div>
-
 </body>
 
 </html>

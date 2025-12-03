@@ -66,3 +66,14 @@ body {
     background-color: #c82333;
     transform: scale(1.05);
 }
+
+/* P9 */
+.btn {
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}

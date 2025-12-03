@@ -1,5 +1,5 @@
 <?php
-require_once "Song.php";
+require_once "song.php";
 $song = new Song();
 
 $id = $_GET['id'];
