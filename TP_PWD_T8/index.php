@@ -42,12 +42,6 @@ $data = $song->getAllSongs();
                         <a class="nav-link" href="#">About</a>
                     </li>
 
-                    <!-- <li class="nav-item ms-3">
-                        <a class="btn btn-light rounded-pill px-3 fw-semibold shadow-sm" href="#">
-                            Login
-                        </a>
-                    </li> -->
-
                 </ul>
             </div>
         </div>
