@@ -40,7 +40,7 @@ if (isset($_POST['update'])) {
         $_POST['category_id']
     );
 
-    header("Location: index.php");
+    header("Location: ../index.php");
 }
 
 
@@ -78,7 +78,7 @@ if (isset($_POST['update'])) {
             </select>
 
             <button name="update" class="btn btn-warning">Update</button>
-            <a href="index.php" class="btn btn-secondary">Kembali</a>
+            <a href="../index.php" class="btn btn-secondary">Kembali</a>
         </form>
     </div>
 
